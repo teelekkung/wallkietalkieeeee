@@ -14,9 +14,10 @@ RF24 radio(9,10);
 #define I2S_LRC  17
 #define button1 4
 #else
-RF24 radio(4,5);
+RF24 radio(21,5);
+// cs = 5, ce = 21, clk = 18, miso = 19, mosi = 23
+#define button1 22
 #define MIC_PIN 14
-#define button1 13
 #define I2S_DOUT 25  // ESP32 I2S Data Out (connect to DIN on MAX98357)
 #define I2S_BCLK 26  // ESP32 I2S Bit Clock (connect to BCLK on MAX98357)
 #define I2S_LRC  27  // ESP32 I2S Left-Right Clock (connect to LRC on MAX98357) 
